@@ -499,6 +499,63 @@ plt.title("trapezoide")
 plt.show()
 
 print(A)
+https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/trapezoide.PNG
+
+#Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
+from tkinter import *
+
+class Mi_primera_GUI:
+    def __init__(self, master):
+        self.master = master
+        master.title("Una GUI sencilla")
+
+        self.etiqueta = Label(master, text="Mi primera GUI")
+        self.etiqueta.grid(eow=0, column=0)
+
+        self.boton_saludo = Botton(master, text="Saludos", command=self.saludar)
+        self.boton_saludar.grid(row=1, column=0)
+
+        self.boton_cerrar = Botton(master, text="Cerrar", command=master.squit)
+        self.boton_cerrar.grid(eow=1, column=1)
+    
+    def saludar(self):
+        print('Saludos')
+
+    def darBuenos(self):
+        print('Buenos dias') 
+	
+	#Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
+from tkinter import *
+
+class Mi_primera_GUI:
+    def __init__(self, master):
+        self.master = master
+        master.title("Una GUI sencilla")
+
+        self.etiqueta = Label(master, text="Mi primera GUI")
+        self.etiqueta.grid(eow=0, column=0)
+
+        self.boton_saludo = Botton(master, text="Saludos", command=self.saludar)
+        self.boton_saludar.grid(row=1, column=0)
+
+        self.boton_cerrar = Botton(master, text="Cerrar", command=master.squit)
+        self.boton_cerrar.grid(eow=1, column=1)
+    
+    def saludar(self):
+        print('Saludos')
+
+    def darBuenos(self):
+        print('Buenos dias') 
+	Eliminación de Gauss con pivote de fila escalado
+Considere la solución de Ax = b mediante la eliminación de Gauss con pivote de fila. Recuerde que los objetivos pivotantes mejoran el dominio diagonal de la matriz de coeficientes (es decir, hacer que el elemento pivote sea lo más grande posible en comparación con otros elementos en la fila pivote). La comparación se hace más fácil si esta matriz se presenta con los elementos
+Si=max⁡|Aij|,i=1,2,…,n
+
+Así si, llamado el factor de escala de rowi, contiene el valor absoluto del elemento más grande en la línea de A. Los vectores se pueden obtener con el algoritmo 
+Para i en el rango (n):
+S[i]=max⁡(abs(a[i,:]))
+ El tamaño relativo de un elemento Aij (es decir, en relación con el elemento más grande en el i throw) se define como la relación 
+Ry=(|Ay|)/Si
+Supongamos que la fase de eliminación ha llegado a la etapa en la que el throwrow se ha convertido en la trivotrow.}
 
 
 
