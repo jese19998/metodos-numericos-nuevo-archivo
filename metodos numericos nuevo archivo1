@@ -97,4 +97,11 @@ El método que vamos a analizar es el de eliminación de gauss.
 NOTACIÓN
 Un sistema de ecuaciones algebraicas tiene la forma:
 A11 X1 + A12 x2 + … + A 1 nxn = b1
-![github](https://user-images.githubusercontent.com/52551072/71958550-34ed5780-31b6-11ea-966e-112d4175818d.PNG)
+ejercicio 1
+#Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
+#13/09/2019
+#Ejercicio 1
+
+from numpy import*
+
+print(arange(1,101,2))
