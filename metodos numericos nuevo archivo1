@@ -168,9 +168,12 @@ def calcula_x(c,L):
 print (x1)
 print (x2)
 print (x3)
+Fase de eliminacion  
+Veamos en las ecuaciones en algún instante de la fase de eliminación. Asumamos que las primeras “k - filas” de “A” han sido transformadas a una forma de matriz triangular.
+
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
-import numpy as np 
+import numpy as np ejercicio6
 def elimGauss(A,b):
     n = len(b)
     #face de eliminacion
@@ -186,6 +189,7 @@ b = np.array([[11.0],[-16.0],[17.0]])
 a,b = elimGauss(a,b)
 print(a)
 print(b)
+https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/ejercicio6.PNG
 
 
 
