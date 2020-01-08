@@ -220,6 +220,7 @@ b=elimGauss(A,b)
 print(A)
 print(b)                
 
+![fase de eliminacion](https://user-images.githubusercontent.com/52551072/71969062-94a22d80-31cb-11ea-9e9c-55aa25abb24d.PNG)
 
 
 
