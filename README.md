@@ -1,7 +1,6 @@
-# metodos-numericos-nuevo-archivo
-Objetivo de la materia:
-La asignatura de métodos numéricos aporta al perfil del ingeniero mecatrónico la capacidad de aplicar herramientas matemáticas, computacionales y métodos experimentales en la solución de problemas para formular modelos, analizar procesos y elaborar prototipos.
-  La asignatura requiere que el alumno haya cursado cálculo diferencial y cálculo integral, así como Programación Básica.
+# Metodos Numericos
+## Objetivo de la materia
+La asignatura de métodos numéricos aporta al perfil del ingeniero mecatrónico la capacidad de aplicar herramientas matemáticas, computacionales y métodos experimentales en la solución de problemas para formular modelos, analizar procesos y elaborar prototipos. La asignatura requiere que el alumno haya cursado cálculo diferencial y cálculo integral, así como Programación Básica.
 Introducción a Python
 Python es un lenguaje de Programación orientados a  objetos que fue desarrollado a finales de los 80’s como un  lenguaje de tipo script. Python tiene el objetivo de ser un lenguaje para el desarrollo rápido de aplicaciones en ingeniería. Los programas de Python no son compilados, si no que trabajan bajo un intérprete.
 Python tiene algunas ventajas sobre otros lenguajes de programación como:
