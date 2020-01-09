@@ -109,6 +109,7 @@ ejercicio 1
 ```from numpy import*
 
 ```print(arange(1,101,2))
+![imagen prueba ](Captura ejercicio1.PNG)
 
 
 ##Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
