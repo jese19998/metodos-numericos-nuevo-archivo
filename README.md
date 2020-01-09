@@ -1,21 +1,21 @@
 # Metodos Numericos
 ## Objetivo de la materia
 La asignatura de métodos numéricos aporta al perfil del ingeniero mecatrónico la capacidad de aplicar herramientas matemáticas, computacionales y métodos experimentales en la solución de problemas para formular modelos, analizar procesos y elaborar prototipos. La asignatura requiere que el alumno haya cursado cálculo diferencial y cálculo integral, así como Programación Básica.
-Introducción a Python
+## Introducción a Python
 Python es un lenguaje de Programación orientados a  objetos que fue desarrollado a finales de los 80’s como un  lenguaje de tipo script. Python tiene el objetivo de ser un lenguaje para el desarrollo rápido de aplicaciones en ingeniería. Los programas de Python no son compilados, si no que trabajan bajo un intérprete.
 Python tiene algunas ventajas sobre otros lenguajes de programación como:
 	Python es un software de código abierto, lo que quiere decir que es libre y gratuito y es concluida en todas las computadoras con distribuciones Linux o Mac.
 	Python puede correr sus scripts en todas las plataformas (Windows, Linux, Macos) sin tener que modificar ninguna parte del programa.
 	 Python es fácil de aprender y produce un código más amigable que otros lenguajes.
 	Python y sus extensiones son fáciles de instalar.
-Introducción:
+## Introducción
 En este capítulo, dos estrellas de solución de citas algebraicas lineales de conocimientos desconocidos. Es, con mucho, el tema más largo y posiblemente el más importante del libro. Hay una buena razón para su importancia: es casi imposible llevar a cabo análisis numéricos de cualquier tipo sin encontrar ecuaciones simultáneas. Además, los conjuntos de ecuaciones que surgen de problemas físicos a menudo son muy grandes y consumen muchos recursos computacionales. Por lo general, es posible reducir los requisitos de almacenamiento y el tiempo de ejecución mediante la explotación de propiedades especiales de la matriz eficiente, como la dispersión (la mayoría de los elementos de una matriz dispersa son cero). Por lo tanto, existen muchos algoritmos dedicados a la solución de conjuntos de ecuaciones grandes, cada uno de ellos adaptado a una forma particular de la matriz de coeficientes (simétrica, en bandas, dispersa, etc.). Una colección bien conocida de estas rutinas es LAPACK: Linear Algebra PACKage, originalmente escrita en Fortran77.1. No podemos discutir todos los algoritmos especiales en el espacio limitado disponible. Lo mejor que podemos hacer es presentar los métodos básicos de solución, complementados por algunos algoritmos de algoritmos de seguridad para las matrices de coeficientes.
 
 
-VARIABLES
+## VARIABLES
 En la mayoría de lenguajes el nombre de una variable representa un valor de un determinado tipo guardado en una ubicación de memoria. El valor puede cambiar, pero no el tipo. Esto no pasa en Python ya que sus variables son tapadas dinámicamente. Una sesión del intérprete de Python cuyo pront son 3 símbolos de mayor que (>>>) ilustra esta característica. Un comentario en Python debe comenzar con el signo “#”.
 
-CADENAS
+## CADENAS
 Una cadena es una secuencia de caracteres encerrada entre apostrofes, las cadenas son concatenadas con el operador “+” mientras que el operador es usado para extraer una porción de la cadena.
 Una cadena puede ser dividida en sus componentes utilizando el comando “Split” los componentes deben de aparecer como elementos en una lista.
 TUPLA
