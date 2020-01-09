@@ -18,7 +18,7 @@ En la mayoría de lenguajes el nombre de una variable representa un valor de un 
 ## CADENAS
 Una cadena es una secuencia de caracteres encerrada entre apostrofes, las cadenas son concatenadas con el operador “+” mientras que el operador es usado para extraer una porción de la cadena.
 Una cadena puede ser dividida en sus componentes utilizando el comando “Split” los componentes deben de aparecer como elementos en una lista.
-TUPLA
+## TUPLA
 Una tupla es una secuencia de objetos arbitrarios separados por comas “ , ” y encerrados entre paréntesis “ (,) ”. Si la tupla contiene un solo objeto, una coma al final del objeto será necesaria; por ejemplo x= (2,).
 Las tuplas soportan el mismo tipo de operaciones que las cadenas, por ejemplo: 
 ```
@@ -51,10 +51,10 @@ Prin (a) … (0.0, 0.5) …
 Las matrices son representadas por listas anidadas, con cada fila siendo un elemento de la lista, por ejemplo, insertar matriz “(a)”.
 A= (1&2&3@4&5&6@7&8&9)
 ````
-Módulos matemáticos 
+## Módulos matemáticos 
 	Math
 	Numpy
-El módulo math
+## El módulo math
 La mayoría de funciones matemáticas están incluidas en el núcleo de python, pero también pueden importarse. Hay 3 formas de acceder a las funciones en un módulo.
 La primera forma es importando todo el módulo utilizando la instrucción:
 from math import*
@@ -71,7 +71,7 @@ chicharo. cos (0.15)
 Los contenidos de un módulo pueden ser llamados e impresos con la función 
 “dir (math)”        importa en lista comandos de math.
 
-“Módulo numpy”
+## Módulo numpy
 El módulo numpy no está incluido en el módulo de python y debe descargarse e instalarse, además implementa funciones del algebra lineal y funciones de manejo de vectores.
 Los arreglos pueden ser creados de diferentes formas. Uno de ellos es el uso de las funciones ARRAY para convertir una lista en un arreglo mediante el comando:
 Array(lista,tipo)
@@ -81,9 +81,9 @@ Otra función disponible es la creación de matrices con componente CERO utiliza
 El comando ONES crea un arreglo con definiciones del usuario :
 #ones((dim1,dim2,)tipo)
 
-Condicionales
+## Condicionales
 La construcción if si condición: bloquear ejecuta un bloque de declaraciones (que deben tener sangría) si la condición devuelve Cierto. Si la condición devuelve False, se omite el bloque. El if condicional puede ser seguido por cualquier número de construcciones elif (abreviatura de "else if") condición elif: bloquear que funcionan de la misma manera. La cláusula else más: bloquear se puede usar para definir el bloque de sentencias que se ejecutarán si ninguna de las cláusulas if-elif son verdaderas. El signo de función de a ilustra el uso de los condicionales.
-def sign_of_a(a):
+```def sign_of_a(a):
      if a < 0.0: 
          sign = ’negative’ 
      elif a > 0.0:
@@ -92,9 +92,9 @@ def sign_of_a(a):
            sign = ’zero’ 
        return sign 
 a = 1.5
- print(’a is ’ + sign_of_a(a))
+ ```print(’a is ’ + sign_of_a(a))
 
-SISTEMA DE ECUACIONES ALGEBRAICAS 	LINEALES
+## SISTEMA DE ECUACIONES ALGEBRAICAS 	LINEALES
 Objetivo: Resolver ecuaciones simultaneas Ax=b
 En este tema procedemos a la solución de N ecuaciones algebraicas lineales con N variables desconocidas. Es un tema muy importante ya que casi es imposible realizar análisis numéricos sin encontrar ecuaciones simultáneas. Además, los conjuntos de ecuaciones de problemas de ingeniería son de forma típica muy grandes y consumen demasiados recursos computacionales. Hay muchos algoritmos dedicados a la solución de grandes conjuntos de ecuaciones, cada uno diseña una forma particular una matriz de coeficientes.
 El método que vamos a analizar es el de eliminación de gauss.
@@ -106,38 +106,38 @@ ejercicio 1
 #13/09/2019
 #Ejercicio 1
 
-from numpy import*
+```from numpy import*
 
-print(arange(1,101,2))
-file:///C:/Users/jacos/Downloads/hibbeler/capturas%20de%20pantalla%20para%20metodos%20numericos/Captura%20ejercicio1.PNG
+```print(arange(1,101,2))
+
 
 ##Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #13/09/2019
 #Ejercicio 2
 
-from numpy import array
+```from numpy import array
 
 a=array([[1.44, -0.36, 5.52, 0.00], [-0.36, 10.33, -7.78, 0.00], [5.52, -7.78, 28.40, 9.00], [0.00, 0.00, 9.00, 61.00]])
 print(a)
 
 b=array([[0.04], [-2.15], [0], [0.88]])
-print(b)![ejercicio2](https://user-images.githubusercontent.com/52551072/71963327-0759db80-31c1-11ea-9b82-ad75bc2197dd.PNG)
+```
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #20/09/2019
 #Ejercicio 3: Determinar que la matriz A es singular
 
-import numpy as np
+```import numpy as np
 A = np.array([[2.1,-0.6,1.1],[3.2,4.7,-0.8],[3.1,-6.5,4.1]])
 detA = np.linalg.det(A)
-print('La determinante de A es: %.2f'%detA )
+```print('La determinante de A es: %.2f'%detA )
 ![ejercicio3](https://user-images.githubusercontent.com/52551072/71963817-12613b80-31c2-11ea-94c5-9f63a6b08f7c.PNG)
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #20/09/2019
 #Ejercicio 4: Realizar un programa en el que el usuario introduzca los 9 elementos de una matriz 3*3 y que el programa le debuelva al usuario si la matriz que inserto es singular o no.
 
-import numpy as np
+```import numpy as np
 print('Introduce los 9 datos de tu matriz: ')
 a11 = float(input('a11= '))
 a12 = float(input('a12= '))
@@ -154,13 +154,13 @@ detA = np.linalg.det(A)
 if np.round(detA,0) == 0.0:
     print('La matriz A es singular')
 else: 
-    print('la matriz A no es singular, es: %.2f' %detA )
-![ejercicio4](https://user-images.githubusercontent.com/52551072/71964786-fced1100-31c3-11ea-986e-4336357a1687.PNG)
+    ```print('la matriz A no es singular, es: %.2f' %detA )
+    
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #26/09/2019
 #Ejercicio 5
 
-import numpy as np
+```import numpy as np
 L = np.array([[1,0,0],[2,3,0],[4,5,6]])
 c = np.array([[1],[2],[3]])
 def calcula_x(c,L):
@@ -192,9 +192,8 @@ a = np.array([[4.0,-2.0,1.0],[-2.0,4.0,-2.0],[1.0,-2.0,1.0]])
 b = np.array([[11.0],[-16.0],[17.0]])
 a,b = elimGauss(a,b)
 print(a)
-print(b)
-https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/ejercicio6.PNG
-![matriz](https://user-images.githubusercontent.com/52551072/71966590-818d5e80-31c7-11ea-932c-0d453ec01420.PNG)
+```print(b)
+
 1. Usar el método de eliminación de Gauss para encontrar la solución del sistema de ecuaciones
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
@@ -202,7 +201,7 @@ https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/ejercic
 #Ejercicio 14
 
 #fase de eliminacion
-import numpy as np
+```import numpy as np
 def elimGauss(a,b):
     n=len(b)
     for k in range(0,n-1):
@@ -222,7 +221,7 @@ b=np.array([-4.0,-50.0,-26.0])
 
 b=elimGauss(A,b)
 print(A)
-print(b)                
+```print(b)                
 
 ![fase de eliminacion](https://user-images.githubusercontent.com/52551072/71969062-94a22d80-31cb-11ea-9e9c-55aa25abb24d.PNG)
 ![fase de eliminacion2 1](https://user-images.githubusercontent.com/52551072/71969634-afc16d00-31cc-11ea-932b-8437b2dc5a5c.PNG)
@@ -231,7 +230,7 @@ print(b)
 #25/10/2019
 #Ejercicio 16
 
-import numpy as np
+```import numpy as np
 import matplotlib.pyplot as plt
 
 #Vamos a crear dos listas vacias
@@ -252,13 +251,13 @@ y = np.array(Y)
 
 #graficar los puntos
 plt.scatter(X,Y)
-plt.show()
+```plt.show()
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #07/11/2019
 #Ejecicio 17
 
-import numpy as np
+```import numpy as np
 import matplotlib.pyplot as plt
 
 #creando lista vacia
@@ -281,10 +280,10 @@ b=(Y.mean()*X.dot(X)-X.mean()*X.dot(Y))/den
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
-import matplotlib.pyplot as plt
+```import matplotlib.pyplot as plt
 
 #Lista vacia
-X=[]
+```X=[]
 Y=[]
 
 #Leeyendo el archivo .csv
@@ -304,34 +303,34 @@ ax.scatter(X[:,1],X[:,2],Y)
 ax.set_xlabel('x1')
 ax.set_ylabel('x2')
 ax.set_zlabel('y')
-plt.show()
+```plt.show()
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #21/11/2019
 #Ejercicio 22 Integral definida
 
-from sympy import *
+```from sympy import *
 init_printing(use_unicode=False, wrap_line=False)
 x=Symbol('x')
 a=integrate(x**3-6*x**2+11*x-6,(x,1.3,1.8))
-print(a)
+```print(a)
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez 
 #21/11/2019
 #Ejercicio 22 Integral indefinida
 
-from sympy import *
+```from sympy import *
 init_printing(use_unicode=False, wrap_line=False)
 x=Symbol('x')
 a=integrate(x**3-6*x**2+11*x-6,x)
 
-print(a)
+```print(a)
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #21/11/2019
 #Ejercicio 24 
 
-import matplotlib.pyplot as plt
+```import matplotlib.pyplot as plt
 def funcion(x):
     return x**3-6*x**2+11*x-6
 
@@ -346,7 +345,7 @@ print(A)
 
 plt.scatter(a,b)
 plt.plot(x)
-plt.show()
+```plt.show()
 
 https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/matloplotlib.PNG
 
@@ -354,7 +353,7 @@ https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/matlopl
 #22/11/2019
 #Ejercicio 25 con las graficas
 
-import matplotlib.pyplot as plt
+```import matplotlib.pyplot as plt
 from sympy import *
 init_printing(use_unicode=False, wrap_line=False)
 x=Symbol('x')
@@ -368,16 +367,16 @@ e=integrate(x**1/2*1,x)
 f=integrate(2*x**3-5*x**2-3*x+4,x)
 
 print(d)
-sp.plot(x**1/2*1,integrate(x**1/2*1,x))
+```sp.plot(x**1/2*1,integrate(x**1/2*1,x))
 
 print(e)
 sp.plot(x**6,integrate(x**6,x))
 
 print(f)
-sp.plot(2*x**3-5*x**2-3*x+4,integrate(2*x**3-5*x**2-3*x+4,x))
+```sp.plot(2*x**3-5*x**2-3*x+4,integrate(2*x**3-5*x**2-3*x+4,x))
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
-from mpl_toolkits.mplot3d import Axes3D
+```from mpl_toolkits.mplot3d import Axes3D
 from sympy import * 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -390,7 +389,7 @@ plt.plot(x, f(x))
 plt.grid()
 plt.show()
 
-def simpson13(n, a, b, f):
+```def simpson13(n, a, b, f):
 
     h = (b - a) / n
    
@@ -423,7 +422,7 @@ def fx(x, f):
 n = 200
 a = 0.1
 b = 2.0
-f = '2*x**3-5*x**2+3*x+5'
+```f = '2*x**3-5*x**2+3*x+5'
 
 
 print(simpson13(n, a, b, f))
@@ -433,7 +432,7 @@ https://github.com/jese19998/metodos-numericos-nuevo-archivo/blob/master/grafica
 #22/11/2019
 #Ejercicio 25 Resultados de las integrales
 
-import matplotlib.pyplot as plt
+```import matplotlib.pyplot as plt
 from sympy import *
 init_printing(use_unicode=False, wrap_line=False)
 x=Symbol('x')
@@ -460,13 +459,13 @@ print(D)
 
 plt.scatter(a,b)
 plt.plot(x)
-plt.show()
+```plt.show()
 
 #Equipo Jese Manuel Acosta Avila y Gabriela Ramirez Cortez
 #Ejercico 27
 #29-noviembre-2019
 
-from sympy import * 
+```from sympy import * 
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -563,7 +562,6 @@ Supongamos que la fase de eliminación ha llegado a la etapa en la que el throwr
 
 
 
-![Imagen prueba](github.PNG)
 
 
-![Imagen prueba](github.PNG)
+
