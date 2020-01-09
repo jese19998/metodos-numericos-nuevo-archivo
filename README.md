@@ -21,11 +21,12 @@ Una cadena puede ser dividida en sus componentes utilizando el comando “Split�
 TUPLA
 Una tupla es una secuencia de objetos arbitrarios separados por comas “ , ” y encerrados entre paréntesis “ (,) ”. Si la tupla contiene un solo objeto, una coma al final del objeto será necesaria; por ejemplo x= (2,).
 Las tuplas soportan el mismo tipo de operaciones que las cadenas, por ejemplo: 
+```
 >>> rec = ('Smith', 'John', (6,23,68)) # Esta es una tupla 
 >>> apellido, nombre, fecha de nacimiento = rec # Desempacando la tupla 
 >>> print (nombre) 
 John
-> >> año de nacimiento = fecha de nacimiento [2] 
+>>> año de nacimiento = fecha de nacimiento [2] 
 >>> print (año de nacimiento) 
 68 
 >>> nombre = rec [1] + '' + rec [0] 
@@ -35,8 +36,8 @@ John
 
  ('Smith', 'John')
 
-
-Listas
+```
+## Listas
 Una lista es similar a una tupla, sin embargo, sus elementos y su longitud pueden cambiar. Una lista es identificada por que sus datos están encerrados en corchetes.
 a • append (4.0)
 Se puede determinar la longitud de una lista con el comando “Len”, por ejemplo:
