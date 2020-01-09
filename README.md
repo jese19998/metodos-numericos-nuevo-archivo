@@ -39,15 +39,18 @@ John
 ```
 ## Listas
 Una lista es similar a una tupla, sin embargo, sus elementos y su longitud pueden cambiar. Una lista es identificada por que sus datos están encerrados en corchetes.
+```
 a • append (4.0)
+```
 Se puede determinar la longitud de una lista con el comando “Len”, por ejemplo:
 (listan ant)
 Print (len(a))
 También se puede modificar elementos internos en una lista, por ejemplo:
+```
 Prin (a) … (0.0, 0.5) …
 Las matrices son representadas por listas anidadas, con cada fila siendo un elemento de la lista, por ejemplo, insertar matriz “(a)”.
-A= ■(1&2&3@4&5&6@7&8&9)
-
+A= (1&2&3@4&5&6@7&8&9)
+````
 Módulos matemáticos 
 	Math
 	Numpy
